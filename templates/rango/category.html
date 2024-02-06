@@ -14,6 +14,7 @@
         <div>
         {% if category %}
              <h1>{{ category.name }}</h1>
+             <a href="{% url 'rango:add_page' category_name_slug=category.slug %}">Add Page</a>
              {% if pages %}
              <ul>
                  {% for page in pages %}
@@ -29,9 +30,10 @@
 
         </div>
 
-       <a href="{% url 'index' %}">Back to Homepage</a>
+        <div><a href="{% url 'index' %}">Back to Homepage</a></div>
 
-    
+
+
     </body>
 
 </html>
