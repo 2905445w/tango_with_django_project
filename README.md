@@ -1,1 +1,1 @@
-# tango_with_django_project-2025
+# tango_with_django_project
