@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ page.title }}</title>
+</head>
+<body>
+    {% if page %}
+        <h1>{{ page.title }}</h1>
+        <p>URL: <a href="{{ page.url }}">{{ page.url }}</a></p>
+        <p>Views: {{ page.views }}</p>
+        <p>Category: {{ page.category.name }}</p>
+    {% else %}
+        <p>The requested page does not exist.</p>
+    {% endif %}
+    <a href="{% url 'index' %}">Back to Home</a>
+</body>
+</html>
